@@ -3,3 +3,13 @@ index-v1.html
 *.tar
 *.tgz
 node_modules/
+# Personal exports and local files
+*备份*.json
+*backup*.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
