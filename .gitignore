@@ -1,0 +1,5 @@
+app-v1.js
+index-v1.html
+*.tar
+*.tgz
+node_modules/
