@@ -173,3 +173,5 @@ body.sitePolish [hidden]{display:none!important}
 body.sitePolish #postDates>summary{display:flex;align-items:center;gap:8px;min-height:17px}
 body.sitePolish #dateRangeText{margin-left:auto;min-width:0;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
 body.sitePolish #postDates>summary:after{white-space:nowrap;flex-shrink:0}
+
+body.sitePolish .siteBrand{display:flex;flex-direction:column;align-items:flex-start;gap:0}body.sitePolish .siteBrandMark,body.sitePolish #nav .siteNavIcon{display:none}body.sitePolish .empty:before{display:none;content:none}.homePostFold{display:flex;justify-content:center;grid-column:1/-1;margin:14px 0 9px;padding:3px 0}body.sitePolish .homePostFold>button{font-size:12px;min-height:34px;padding:7px 18px;background:transparent;color:var(--t-accent);border:1px solid var(--t-line);border-radius:var(--ui-control-radius)}body.sitePolish .homePostFold>button:hover{background:var(--t-tint)}
