@@ -63,3 +63,45 @@ body[data-theme] .journalPost .postMore>summary{padding:3px 2px;font-size:12px;l
 body>.graphWorkspace.fullscreenGraph{inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;box-sizing:border-box;border-radius:0;overflow:hidden}body>.fullscreenGraph>.graphScroll{position:relative;min-width:0;min-height:0;flex:1 1 0;box-sizing:border-box}body>.fullscreenGraph #graphSvg{max-width:none!important;max-height:none!important;touch-action:none}body>.fullscreenGraph>.graphBendHint{flex-shrink:0}
 .pairArchiveCount{grid-column:1/-1;margin:4px 0!important}.pairArchiveCard{border:1px solid var(--line);border-radius:var(--t-radius);background:var(--paper);min-width:0;overflow-wrap:anywhere}.pairArchiveFold>summary{list-style:none;display:flex;align-items:center;gap:8px;cursor:pointer;padding:13px 14px;color:var(--ink)}.pairArchiveFold>summary::-webkit-details-marker{display:none}.pairArchiveFold>summary:after{content:'＋';margin-left:auto;font-size:12px;color:var(--muted)}.pairArchiveFold[open]>summary:after{content:'−'}.pairArchiveFold>summary>span{font-size:16px}.pairArchiveFold>summary>small{font-size:11px;padding:1px 6px;border:1px solid var(--line);border-radius:12px;color:var(--muted)}.pairArchiveContent{padding:0 14px 14px}.pairArchiveMembers{margin:0 0 9px;font-size:12px;color:var(--muted);line-height:1.7}.pairArchiveNote{font-size:14px;line-height:1.85;white-space:pre-wrap;margin-bottom:9px;max-height:260px;overflow:auto}.pairLegacy{border-top:1px solid var(--line);padding-top:7px;margin:8px 0}.pairLegacy>summary{cursor:pointer;font-size:12px;color:var(--muted)}.pairLegacyEntry{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.75;white-space:pre-wrap}.pairLegacyEntry p{margin:3px 0}.pairLegacyEntry small{font-size:11px}.pairArchiveContent>.row{gap:9px;margin-top:10px}body[data-theme] .pairArchiveContent>.row button{padding:3px 0;border:0;background:none;font-size:11px;color:var(--muted)}.pairArchiveCard[hidden]{display:none!important}
 .pairArchiveToggle{grid-column:1/-1;font-size:12px}
+/* Relationship archive: quiet cards, paired identities and a focused editor. */
+body[data-theme] #feed.relationshipFeed{gap:14px;max-width:850px}
+.pairArchiveCard{transition:border-color .15s ease,box-shadow .15s ease;background:var(--paper)}
+.pairArchiveCard:hover{border-color:var(--t-accent);box-shadow:0 3px 14px #00000008}
+.pairArchiveFold>summary{padding:16px;gap:12px;min-height:44px}
+.pairArchiveFold>summary:after{font-size:13px;opacity:.7;flex-shrink:0}
+.pairAvatarStack{display:inline-flex;align-items:center;flex-shrink:0;padding-right:0;line-height:1}
+.pairAvatarStack>.avatar{width:31px;height:31px;min-width:31px;object-fit:cover;border:2px solid var(--paper);box-shadow:0 0 0 1px var(--line);margin:0;font-size:12px;display:inline-flex;align-items:center;justify-content:center}
+.pairAvatarStack>.avatar+.avatar{margin-left:-8px}
+.pairCardTitles{min-width:0;flex:1;display:flex;flex-direction:column;gap:4px;line-height:1.5}
+.pairCardTitles>strong{font-weight:500;font-size:16px;color:var(--ink);overflow-wrap:anywhere}
+.pairCardTitles>span{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.pairArchiveFold>summary>small{padding:2px 8px;font-size:10px;max-width:95px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:0;background:var(--t-tint);color:var(--t-accent)}
+.pairArchiveContent{padding:0 16px 14px;border-top:1px solid var(--line);margin:0 16px;padding-left:0;padding-right:0}
+.pairNoteHeading{font-size:10px;letter-spacing:1px;color:var(--muted);margin:13px 0 6px}
+.pairArchiveNote{font-size:14px;line-height:1.9;margin:0 0 12px;max-height:240px}
+.pairLegacy{margin:11px 0 5px;border-top:0;padding:0}
+.pairLegacy>summary{font-size:11px;line-height:1.8;padding:3px 0;color:var(--muted)}
+.pairLegacyEntry{font-size:12px;border:0;border-left:2px solid var(--line);padding:5px 0 5px 10px;margin:7px 0 10px}
+.pairArchiveContent>.row{gap:14px;padding-top:10px;margin-top:10px;border-top:1px solid var(--line)}
+body[data-theme] .pairArchiveContent>.row button{font-size:11px;padding:4px 0;line-height:1.5}
+body[data-theme] .pairArchiveContent>.row button:first-child{color:var(--t-accent)}
+.pairArchiveContent>.row button:last-child{margin-left:auto;opacity:.7}
+.pairFormHeading{padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:18px}
+body[data-theme] #pairArchiveForm .pairFormHeading h2{font-size:23px;line-height:1.4;margin:0 0 7px}
+#pairArchiveForm .pairFormHeading .hint{font-size:12px;line-height:1.6;margin:0}
+.pairIdentity{display:flex;align-items:center;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;margin-bottom:20px;background:var(--t-tint)}
+.pairIdentity .pairAvatarStack>.avatar{width:42px;height:42px;min-width:42px;font-size:16px}
+.pairIdentity .pairAvatarStack>.avatar+.avatar{margin-left:-10px}
+.pairIdentity>div{min-width:0;display:flex;flex-direction:column;gap:4px;line-height:1.6}
+.pairIdentity strong{font-size:16px;font-weight:500;overflow-wrap:anywhere}
+.pairIdentity>div>span{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.pairNameFields{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+#pairArchiveForm .field{font-size:12px;font-weight:500;margin:0 0 16px;line-height:1.7}
+body[data-theme] #pairArchiveForm input[type=text],body[data-theme] #pairArchiveForm textarea{margin-top:7px;padding:10px 12px;font-size:14px;border-radius:6px;background:var(--paper);box-sizing:border-box;width:100%}
+#pairArchiveForm textarea{min-height:130px;resize:vertical;line-height:1.85}
+.pairOptional{font-size:10px;font-weight:400;color:var(--muted);margin-left:4px}
+#pairArchiveForm .pairFormHint{font-size:11px;line-height:1.8;margin:0 0 18px}
+#pairArchiveForm .dialogActions{border-top:1px solid var(--line);padding-top:15px;margin-top:0;gap:9px}
+#pairArchiveForm .pairMemberFields{margin-bottom:18px}
+#pairArchiveForm .pairMemberFields>.selectorDisclosure{margin:-9px 0 16px}
+@media(max-width:600px){.pairNameFields{grid-template-columns:1fr;gap:0}.pairArchiveFold>summary{padding:14px;gap:10px}.pairArchiveContent{margin:0 14px}.pairIdentity{padding:12px;gap:13px}.pairAvatarStack>.avatar{width:28px;height:28px;min-width:28px}.pairCardTitles>strong{font-size:15px}.pairArchiveFold>summary>small{max-width:75px}}
