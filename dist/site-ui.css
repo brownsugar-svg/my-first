@@ -1,0 +1,175 @@
+/* Observatory interface — shared rhythm across the six existing themes. */
+body.sitePolish{--ui-control-radius:clamp(5px,var(--t-radius),13px);--ui-panel-radius:clamp(8px,var(--t-radius),20px);--ui-gap:20px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.sitePolish.gardenEdition[data-theme]{padding:24px 28px 20px}
+body.sitePolish header,body.sitePolish .layout,body.sitePolish footer{width:100%;max-width:1440px;box-sizing:border-box}
+body.sitePolish .layout{grid-template-columns:238px minmax(0,1fr);gap:22px;align-items:start}
+body.sitePolish header{padding:20px 24px;margin-bottom:20px;min-height:90px;gap:24px;border-radius:var(--ui-panel-radius);box-shadow:0 5px 24px #00000005}
+body.sitePolish .siteBrand{display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:13px;align-items:center;min-width:0}
+.siteBrandMark{grid-row:1/3;display:grid;place-items:center;width:40px;height:44px;color:var(--t-accent);border:1px solid var(--t-line);border-radius:var(--ui-control-radius);background:var(--t-tint)}
+.siteBrandMark .siteNavIcon{width:25px;height:25px}
+body.sitePolish header b{font-size:27px;font-weight:500;letter-spacing:5px;line-height:1.4}
+body.sitePolish header small{font-size:8px;letter-spacing:1.5px;line-height:1.5;margin-top:3px;white-space:normal;color:var(--t-soft)}
+body.sitePolish .siteHeaderActions{gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+body.sitePolish button,body.sitePolish .uploadButton{font-size:13px;line-height:1.5;padding:8px 12px;min-height:34px;border-radius:var(--ui-control-radius);transition:background-color .15s ease,border-color .15s ease,box-shadow .15s ease}
+body.sitePolish button.primary{font-weight:500;box-shadow:0 2px 5px #0000000a}
+body.sitePolish button:disabled{cursor:default;opacity:.45}
+body.sitePolish .siteHeaderActions>button{font-size:12px;padding:8px 12px;white-space:nowrap;min-height:36px}
+body.sitePolish #bulkManage,body.sitePolish #wallpaper{background:transparent}
+body.sitePolish #newPost{padding-inline:17px}
+body.sitePolish aside{padding:16px 12px;top:22px;max-height:calc(100dvh - 44px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;border-radius:var(--ui-panel-radius);box-shadow:0 4px 20px #00000004}
+body.sitePolish #siteSidebarContent>.eyebrow{font-size:10px;letter-spacing:1.5px;margin:6px 12px 13px;color:var(--t-soft)}
+body.sitePolish #nav{margin-bottom:17px}
+body.sitePolish #nav .navGroup{margin:0 0 14px}
+body.sitePolish #nav .navGroup>summary{font-size:11px;letter-spacing:.5px;color:var(--t-soft);padding:7px 11px;font-weight:500}
+body.sitePolish #nav .navGroup>summary:after{font-size:10px;opacity:.8}
+body.sitePolish #nav .navGroupLinks{gap:4px}
+body.sitePolish #nav button{display:flex;align-items:center;gap:10px;padding:9px 11px;min-height:39px;font-size:13px;line-height:1.4;border:1px solid transparent;border-radius:var(--ui-control-radius);text-align:left;color:var(--t-soft)}
+body.sitePolish #nav button.active{color:var(--t-accent);background:var(--t-tint)!important;border-color:var(--t-line);box-shadow:none;font-weight:600}
+.siteNavIcon{width:16px;height:16px;min-width:16px;flex-shrink:0;opacity:.85;vertical-align:middle}
+.siteNavCount{margin-left:auto;font-size:10px;line-height:1.5;min-width:18px;text-align:center;border-radius:6px;padding:1px 4px;background:var(--t-card);color:var(--t-soft);font-variant-numeric:tabular-nums}
+body.sitePolish #siteSidebarContent>.foldPanel{margin:10px 0 0;border-bottom:0;padding-top:6px}
+body.sitePolish #siteSidebarContent>.foldPanel>summary{font-size:11px;padding:10px 9px;font-weight:500}
+body.sitePolish .archiveSearchTools{padding:4px 5px 8px;gap:7px}
+body.sitePolish #archiveSearch{font-size:12px;padding:8px 10px;border-radius:var(--ui-control-radius);min-height:34px}
+body.sitePolish #archiveSearchCount,body.sitePolish #archiveSearchMore{font-size:10px}
+body.sitePolish #archiveSearchMore{padding:3px 5px;min-height:24px}
+body.sitePolish #games{display:grid;gap:5px;padding:0 4px}
+body.sitePolish #games .gameNav{display:flex;align-items:center;gap:9px;margin:0;padding:8px 9px;min-width:0;font-size:12px;border:1px solid transparent;border-radius:var(--ui-control-radius)}
+body.sitePolish #games .gameNav:hover,body.sitePolish #games .gameNav.active{background:var(--t-tint);border-color:var(--t-line)}
+body.sitePolish #games .avatar{width:29px;height:29px;min-width:29px;font-size:12px;border:1px solid var(--t-line)}
+body.sitePolish #newGame{width:calc(100% - 8px);margin:9px 4px 1px;font-size:11px;min-height:32px;background:transparent;border-style:dashed}
+body.sitePolish .asideNote{border-top:1px solid var(--t-line);font-size:10px;line-height:1.8;margin:17px 8px 2px;padding-top:13px;color:var(--t-soft)}
+#siteMobileNavigation{display:none}
+body.sitePolish main{padding:28px 32px 32px;border-radius:var(--ui-panel-radius);min-width:0;box-sizing:border-box;min-height:65vh;box-shadow:0 6px 28px #00000004}
+body.sitePolish #profile{padding-bottom:18px;margin-bottom:0;border-bottom:1px solid var(--t-line)}
+body.sitePolish #profile>.eyebrow{font-size:10px;letter-spacing:1.4px;margin:0 0 8px;line-height:1.5}
+body.sitePolish #profile h1{font-size:clamp(25px,2.3vw,33px);line-height:1.5;font-weight:500;letter-spacing:.4px;margin:6px 0 10px}
+body.sitePolish #profile>.muted{font-size:13px;line-height:1.8;margin:0}
+body.sitePolish #profile>.row{gap:7px;margin-top:15px}
+body.sitePolish #profile>button{font-size:12px;margin-top:13px;margin-right:6px}
+body.sitePolish #profile>.bulkEntry{background:transparent;color:var(--t-soft);font-size:11px}
+body.sitePolish .profileHead{gap:18px;align-items:center;margin:2px 0 12px}
+body.sitePolish .profileHead .avatar.big{width:78px;height:78px;min-width:78px}
+body.sitePolish .profileHead h1{margin-top:0}
+body.sitePolish .intro{font-size:14px;line-height:1.85;max-height:260px;overflow:auto}
+body.sitePolish #feedManageBar{margin:11px 0 5px;min-height:25px}
+body.sitePolish #feedManageBar .bulkEntry{padding:3px 2px;font-size:11px;min-height:24px;border:0;color:var(--t-soft);background:transparent}
+body.sitePolish .searchbar{padding:0;margin:8px 0 10px;border:0;gap:9px;align-items:stretch;min-width:0}
+body.sitePolish .postSearchInput{min-width:0}
+body.sitePolish .searchbar #search{font-size:13px;padding-top:11px;padding-bottom:11px;padding-left:13px;min-height:43px;border-radius:var(--ui-control-radius);border:1px solid var(--t-line)}
+body.sitePolish .searchbar>#order{font-size:12px;padding:8px 10px;border-radius:var(--ui-control-radius);min-width:96px;max-width:125px}
+body.sitePolish #searchTagsToggle{font-size:11px;min-height:28px;padding:4px 6px}
+body.sitePolish #searchSelectedTag{min-height:23px;padding:3px 7px;font-size:11px}
+body.sitePolish #searchTagSuggestions{padding:13px;border-radius:var(--ui-control-radius);box-shadow:0 9px 30px #00000018;max-height:min(390px,55vh)}
+body.sitePolish .searchTagChips button{font-size:11px;padding:5px 9px;min-height:27px}
+body.sitePolish .searchTagHeading{font-size:10px;letter-spacing:.4px;margin-bottom:7px}
+body.sitePolish .linkedSearchTrail button{min-height:25px;padding:4px 7px;font-size:11px}
+body.sitePolish #postDates{margin:0 0 15px;padding:0;border:1px solid var(--t-line);border-radius:var(--ui-control-radius);background:transparent}
+body.sitePolish #postDates>summary{font-size:11px;line-height:1.6;padding:8px 11px;letter-spacing:0}
+body.sitePolish #postDates>summary:after{font-size:10px}
+body.sitePolish #postDates .dateControls{margin:8px 11px 10px;gap:8px}
+body.sitePolish #postDates .dateControls label{font-size:11px;min-width:0;flex:1}
+body.sitePolish #postDates .dateControls input{width:100%;box-sizing:border-box;min-height:35px;padding:6px 8px;font-size:12px}
+body.sitePolish #postDates .dateControls button{font-size:11px;min-height:32px;padding:6px 8px}
+body.sitePolish #postDates>.hint,body.sitePolish #postDates>#dateError{margin:4px 11px 8px;font-size:11px}
+body.sitePolish #feed>p.muted,body.sitePolish #feed>.pairArchiveCount{font-size:12px;font-weight:500;line-height:1.6;margin:8px 0 12px!important;color:var(--t-soft)}
+body.sitePolish .post.journalPost{padding:18px 20px;margin:12px 0;border:1px solid var(--t-line);border-radius:var(--ui-panel-radius);box-shadow:0 1px 3px #00000003}
+body.sitePolish .journalPost>.journalMeta{font-size:11px;margin-bottom:9px;letter-spacing:.1px}
+body.sitePolish .journalPost>h2{font-size:21px;line-height:1.5;margin:0 0 10px;font-weight:500}
+body.sitePolish .journalPost>.body{font-size:16px;line-height:1.95;margin-bottom:10px;max-width:none}
+body.sitePolish .journalPost>.chips{gap:5px;margin:8px 0 4px}
+body.sitePolish .journalPost>.chips button{font-size:10px;padding:3px 9px;min-height:24px;line-height:1.5}
+body.sitePolish .journalPost>.postTools{margin-top:8px;gap:15px;min-height:25px}
+body.sitePolish .postTools>button,body.sitePolish .postMore>summary{font-size:11px;padding:4px 0;min-height:23px;background:transparent;line-height:1.5}
+body.sitePolish .postMore{margin-left:auto}
+body.sitePolish .postMoreMenu{border-radius:var(--ui-control-radius);padding:6px;box-shadow:0 6px 24px #00000018}
+body.sitePolish .postMoreMenu button{font-size:12px;padding:8px 10px;min-height:32px}
+body.sitePolish .journalPost>.readMore{font-size:12px;padding:2px 0;min-height:24px}
+body.sitePolish .journalPost>.images{gap:8px;margin:11px 0}
+body.sitePolish .journalPost>.images img{border-radius:var(--ui-control-radius)}
+body.sitePolish .journalPost>.postComments{margin-top:13px;padding-left:13px;border-left:2px solid var(--t-line)}
+body.sitePolish .commentBody{font-size:13px;line-height:1.85}
+body.sitePolish .commentFoot,body.sitePolish .commentFoot button{font-size:10px}
+body.sitePolish .commentFoot button{min-height:22px;padding:2px 4px}
+body.sitePolish .postComments textarea{font-size:13px;line-height:1.8;padding:10px 12px;border-radius:var(--ui-control-radius);width:100%;box-sizing:border-box}
+body.sitePolish .commentSubmit button{min-height:30px;font-size:11px}
+body.sitePolish .postPagination{font-size:11px;padding:10px 0;gap:8px;margin:6px 0 12px}
+body.sitePolish .postPagination button{font-size:11px;min-height:28px;padding:4px 8px}
+body.sitePolish .postPageJump input{font-size:12px;min-height:28px;padding:4px 7px}
+body.sitePolish .foldPanel>summary{font-size:12px;line-height:1.6;padding-block:10px}
+body.sitePolish .collectionTools{gap:7px;margin-bottom:9px}
+body.sitePolish .collectionToggle,body.sitePolish .cardListToggle,body.sitePolish .pairArchiveToggle{font-size:11px;min-height:28px;padding:4px 9px;background:transparent}
+body.sitePolish .mapExplorer{padding:15px;border:1px solid var(--t-line);border-radius:var(--ui-control-radius);margin-bottom:16px}
+body.sitePolish .mapExplorer>.row{gap:8px}
+body.sitePolish .mapExplorer input{padding:9px 11px;font-size:12px;min-height:36px;min-width:0}
+body.sitePolish .mapCards{gap:8px}
+body.sitePolish .mapCards button{padding:11px 12px;border-radius:var(--ui-control-radius);min-width:0;text-align:left}
+body.sitePolish .mapCards strong{font-size:13px;font-weight:500;line-height:1.6}
+body.sitePolish .mapCards small{font-size:10px;line-height:1.6;margin-top:3px}
+body.sitePolish .mapTools{gap:7px;margin-bottom:13px}
+body.sitePolish .mapTools button,body.sitePolish .graphWorkspaceBar button{font-size:11px;min-height:30px;padding:6px 9px}
+body.sitePolish .graphWorkspace{min-width:0}
+body.sitePolish .graphWorkspaceBar{gap:7px}
+body.sitePolish .graphWorkspaceBar .hint,body.sitePolish #graphHint{font-size:11px;line-height:1.8}
+body.sitePolish .graphSyncChoice{font-size:11px}
+body.sitePolish .graphScroll{border:1px solid var(--t-line);border-radius:var(--ui-control-radius)}
+body.sitePolish #galleryQuery{padding:10px 12px;font-size:13px;min-height:40px;border-radius:var(--ui-control-radius);width:100%;box-sizing:border-box}
+body.sitePolish .galleryBulkBar{margin:7px 0}
+body.sitePolish .galleryBulkBar button{font-size:11px;min-height:26px;padding:3px 4px;border:0;background:transparent}
+body.sitePolish .assetGrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin:13px 0}
+body.sitePolish .assetCard{padding:9px;border:1px solid var(--t-line);border-radius:var(--ui-control-radius);min-width:0;overflow:hidden}
+body.sitePolish .assetCard>button{padding:0;display:block;width:100%;border:0;min-height:0;background:transparent}
+body.sitePolish .assetCard img{display:block;width:100%;height:170px;object-fit:cover;border-radius:calc(var(--ui-control-radius) - 3px)}
+body.sitePolish .assetCard>p{font-size:12px;margin:9px 1px 6px;overflow-wrap:anywhere;line-height:1.6}
+body.sitePolish .assetCard .row{gap:9px}
+body.sitePolish .assetCard .row button{font-size:10px;min-height:24px;padding:3px 0;border:0;background:transparent;color:var(--t-soft)}
+body.sitePolish .albumIndex{gap:8px;padding-bottom:12px}
+body.sitePolish .albumIndex button{font-size:12px;padding:11px 12px;line-height:1.6;border-radius:var(--ui-control-radius)}
+body.sitePolish #feed.relationshipFeed{max-width:900px;gap:13px}
+body.sitePolish .pairArchiveCard{border-radius:var(--ui-panel-radius)}
+body.sitePolish .pairArchiveContent>.row button{min-height:24px;padding:3px 0;font-size:11px;background:transparent}
+body.sitePolish .empty{padding:32px 22px;margin-top:12px;text-align:center;border:1px dashed var(--t-line);border-radius:var(--ui-panel-radius);background:transparent;box-shadow:none}
+body.sitePolish .empty:before{content:'✧';display:block;color:var(--t-accent);font-size:29px;line-height:1.3;margin-bottom:13px;opacity:.8}
+body.sitePolish .empty h2{font-size:20px;font-family:var(--t-font);font-weight:500;line-height:1.6;margin:0 0 9px}
+body.sitePolish .empty p{font-size:12px;line-height:1.8;margin:0}
+body.sitePolish .siteEmptyAction{font-size:12px;margin-top:19px;padding:8px 16px}
+body.sitePolish dialog{width:min(720px,calc(100vw - 40px));max-width:calc(100vw - 40px);max-height:calc(100dvh - 44px);padding:27px 29px;border-radius:var(--ui-panel-radius);box-sizing:border-box;box-shadow:0 20px 90px #00000024;scrollbar-width:thin}
+body.sitePolish dialog h2{font-size:23px;line-height:1.5;font-weight:500;margin:0 0 18px}
+body.sitePolish dialog .eyebrow{font-size:10px;margin:0 0 7px;letter-spacing:1px}
+body.sitePolish dialog label.field{font-size:12px;line-height:1.7;display:block;margin:0 0 15px}
+body.sitePolish dialog :is(input[type=text],input[type=search],textarea,select){font-size:14px;padding:10px 12px;border-radius:var(--ui-control-radius);line-height:1.6;border:1px solid var(--t-line);max-width:100%;box-sizing:border-box}
+body.sitePolish dialog textarea{line-height:1.9;resize:vertical}
+body.sitePolish dialog .hint{font-size:11px;line-height:1.8}
+body.sitePolish dialog .dialogActions{padding-top:14px;gap:8px;margin-top:17px;justify-content:flex-end;border-top:1px solid var(--t-line)}
+body.sitePolish dialog .dialogActions button{font-size:12px;min-height:35px;padding:8px 14px}
+body.sitePolish .selectorDisclosure{border-radius:var(--ui-control-radius)}
+body.sitePolish .selectorDisclosure>summary{padding:9px 11px;font-size:12px}
+body.sitePolish .smartPicker .pickerSearch{font-size:12px;min-height:35px;padding:8px 10px}
+body.sitePolish .smartPicker button{font-size:11px;min-height:28px;padding:5px 8px}
+body.sitePolish .smartPicker label{padding:8px;font-size:12px;line-height:1.7}
+body.sitePolish .pickerOption{border-radius:var(--ui-control-radius)}
+body.sitePolish .pickerCount{font-size:10px}
+body.sitePolish .themeDialog{width:min(860px,calc(100vw - 40px))}
+body.sitePolish .themeChoices{gap:13px;margin:20px 0}
+body.sitePolish .themeChoice{border-radius:var(--ui-control-radius);padding:9px}
+body.sitePolish .themeChoice strong{font-size:13px}
+body.sitePolish .themeChoice small{font-size:11px}
+body.sitePolish .themeSample{height:99px;border-radius:calc(var(--ui-control-radius) - 2px)}
+body.sitePolish footer{padding:15px 21px;margin-top:20px;font-size:11px;line-height:1.8;gap:15px;border-radius:var(--ui-panel-radius);box-shadow:none}
+body.sitePolish footer>div{gap:6px;flex-wrap:wrap}
+body.sitePolish footer button{font-size:10px;padding:5px 8px;min-height:27px;background:transparent}
+body.sitePolish #toast{font-size:12px;padding:11px 17px;max-width:calc(100vw - 40px);box-sizing:border-box;line-height:1.7;border-radius:var(--ui-control-radius);box-shadow:0 5px 24px #0002}
+body.sitePolish[data-theme=ins] header,body.sitePolish[data-theme=ins] aside,body.sitePolish[data-theme=ins] footer{border-radius:0;box-shadow:none}
+body.sitePolish[data-theme=tech]{--ui-panel-radius:6px;--ui-control-radius:4px}
+body.sitePolish[data-theme=sweet]{--ui-panel-radius:18px;--ui-control-radius:12px}
+body.sitePolish[data-theme=cosmos]{--ui-panel-radius:16px;--ui-control-radius:10px}
+body.sitePolish.gardenEdition[data-wallpaper=custom] .siteBrandMark{background:rgba(var(--t-surface),.86)}
+body.sitePolish.gardenEdition[data-wallpaper=custom] .post.journalPost{background:rgba(var(--t-surface),.83)}
+@media(min-width:1700px){body.sitePolish.gardenEdition[data-theme]{padding-top:32px}body.sitePolish .layout{grid-template-columns:250px minmax(0,1fr);gap:26px}body.sitePolish main{padding:32px 38px}}
+@media(max-width:1050px){body.sitePolish.gardenEdition[data-theme]{padding:18px}body.sitePolish .layout{grid-template-columns:205px minmax(0,1fr);gap:16px}body.sitePolish main{padding:25px}body.sitePolish header{padding:19px 21px}.siteBrandMark{width:36px;height:40px}body.sitePolish header b{font-size:25px}}
+@media(max-width:760px){body.sitePolish.gardenEdition[data-theme]{padding:10px}body.sitePolish header{display:flex;align-items:center;flex-wrap:wrap;padding:17px 16px;gap:16px;margin-bottom:11px;min-height:0}body.sitePolish .siteBrand{grid-template-columns:35px minmax(0,1fr);gap:0 11px;width:100%}body.sitePolish .siteBrandMark{width:35px;height:38px}body.sitePolish header b{font-size:24px;letter-spacing:5px}body.sitePolish header small{font-size:7px;letter-spacing:.85px;margin-top:2px}body.sitePolish .siteHeaderActions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;width:100%}body.sitePolish .siteHeaderActions>button{font-size:11px;padding:7px 5px;min-height:33px;justify-content:center;letter-spacing:0}body.sitePolish #newPost{padding-inline:5px}body.sitePolish .layout{display:block}body.sitePolish aside{position:static;max-height:none;overflow:visible;margin-bottom:11px;padding:0;border:1px solid var(--t-line);border-radius:var(--ui-panel-radius)}body.sitePolish #siteMobileNavigation{display:flex;align-items:center;gap:10px;justify-content:space-between;min-height:44px;width:100%;padding:10px 13px;background:transparent;border:0;font-size:11px;color:var(--t-soft)}#siteMobileCurrent{font-size:11px;font-weight:500;color:var(--t-accent);margin-left:auto;max-width:55%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.siteNavChevron{font-size:16px;line-height:1}.siteMobileOpen .siteNavChevron{transform:rotate(180deg)}body.sitePolish #siteSidebarContent{display:none}body.sitePolish .siteMobileOpen #siteSidebarContent{display:block;padding:4px 11px 12px;border-top:1px solid var(--t-line);max-height:65dvh;overflow:auto}body.sitePolish #siteSidebarContent>.eyebrow{display:none}body.sitePolish #nav{margin:6px 0 9px}body.sitePolish #nav .navGroup{margin-bottom:8px}body.sitePolish #nav .navGroupLinks{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}body.sitePolish #nav button{font-size:12px;padding:8px;min-height:37px;gap:8px}body.sitePolish #games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:none;gap:4px}body.sitePolish #games .gameNav{font-size:11px;padding:7px;overflow-wrap:anywhere}body.sitePolish .asideNote{display:none}body.sitePolish main,body.sitePolish[data-theme=ins] main{padding:22px 17px 25px;border-radius:var(--ui-panel-radius);min-height:60vh}body.sitePolish #profile{padding-bottom:16px}body.sitePolish #profile h1{font-size:26px;line-height:1.55;margin-bottom:8px}body.sitePolish #profile>.eyebrow{font-size:9px;letter-spacing:.85px}body.sitePolish #profile>.muted{font-size:12px;line-height:1.8}body.sitePolish .profileHead{gap:13px;align-items:flex-start}body.sitePolish .profileHead .avatar.big{width:60px;height:60px;min-width:60px}body.sitePolish .profileHead h1{font-size:24px}body.sitePolish #feedManageBar{margin:8px 0 4px}body.sitePolish .searchbar{gap:7px;margin-top:5px;flex-wrap:nowrap}body.sitePolish .searchbar>#order{min-width:79px;max-width:88px;font-size:11px;padding:7px 4px}body.sitePolish .searchbar #search{font-size:12px;min-height:40px;padding-left:10px}body.sitePolish .postSearchInput{flex:1;width:auto}body.sitePolish .postSearchInput.hasSelectedTag>#search{padding-right:67px}body.sitePolish #searchSelectedTag{position:static;transform:none;display:block;max-width:100%;margin-top:6px;text-align:left;width:fit-content}body.sitePolish #searchSelectedTag[hidden]{display:none}body.sitePolish #searchTagsToggle{top:20px;right:5px;font-size:10px;padding:3px 5px}body.sitePolish #searchTagSuggestions{min-width:240px;max-width:calc(100vw - 55px);box-sizing:border-box;right:auto;width:calc(100vw - 55px);padding:11px}body.sitePolish #postDates{margin-bottom:13px}body.sitePolish #postDates>summary{font-size:10px;padding:8px 10px}body.sitePolish #postDates .dateControls{gap:7px}body.sitePolish #postDates .dateControls label{flex-basis:40%;min-width:100px}body.sitePolish .post.journalPost{padding:15px 14px;margin:10px 0}body.sitePolish .journalPost>h2{font-size:20px}body.sitePolish .journalPost>.body{font-size:15px;line-height:1.95}body.sitePolish .journalPost>.postTools{gap:13px;margin-top:7px}body.sitePolish .postTools>button,body.sitePolish .postMore>summary{font-size:11px}body.sitePolish .assetGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}body.sitePolish .assetCard{padding:7px}body.sitePolish .assetCard img{height:130px}body.sitePolish .assetCard>p{font-size:11px}body.sitePolish .mapExplorer{padding:12px}body.sitePolish .mapExplorer>.row{flex-wrap:wrap}body.sitePolish .mapTools{gap:6px}body.sitePolish .mapTools button{font-size:10px;min-height:29px;padding:6px 8px}body.sitePolish .empty{padding:28px 16px}body.sitePolish .empty h2{font-size:19px}body.sitePolish .empty p{font-size:12px}body.sitePolish dialog{width:calc(100vw - 24px);max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px);padding:23px 19px;border-radius:var(--ui-panel-radius)}body.sitePolish dialog h2{font-size:22px;margin-bottom:17px}body.sitePolish dialog .dialogActions{padding-top:12px;margin-top:14px;gap:8px}body.sitePolish dialog .dialogActions button{min-height:36px}body.sitePolish .themeDialog{width:calc(100vw - 24px)}body.sitePolish .themeChoices{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}body.sitePolish .themeSample{height:84px;padding:12px 9px}body.sitePolish .themeChoice strong{font-size:12px}body.sitePolish .themeChoice small{font-size:10px}body.sitePolish footer{padding:14px 16px;margin-top:12px;display:block;font-size:10px}body.sitePolish footer>div{display:flex;justify-content:flex-start;gap:5px;margin-top:10px}body.sitePolish footer button{font-size:10px;padding:4px 7px}}
+@media(prefers-reduced-motion:reduce){body.sitePolish *{transition:none!important;scroll-behavior:auto!important}}
+body.sitePolish [hidden]{display:none!important}
+body.sitePolish #postDates>summary{display:flex;align-items:center;gap:8px;min-height:17px}
+body.sitePolish #dateRangeText{margin-left:auto;min-width:0;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+body.sitePolish #postDates>summary:after{white-space:nowrap;flex-shrink:0}
