@@ -191,3 +191,5 @@ body.sitePolish .postPagination .postPageJump input{display:block;width:45px;min
 @media(max-width:1000px){body.sitePolish .postPageStatus small{display:none}body.sitePolish .postPagination button.pageBoundary{display:none}}
 body.sitePolish .postPageJump input[type=number]{appearance:textfield;-moz-appearance:textfield}
 body.sitePolish .postPageJump input::-webkit-inner-spin-button,body.sitePolish .postPageJump input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+
+body.sitePolish #feedManageBar{justify-content:space-between;align-items:center}body.sitePolish #feedManageBar>.sitePostCount{margin:0 auto 0 0;font-size:12px;line-height:1.6;font-weight:500;color:var(--t-soft)}body.sitePolish #feedManageBar>.bulkEntry{margin-left:auto}@media(max-width:760px){body.sitePolish #feedManageBar>.sitePostCount{font-size:11px}}
