@@ -1,0 +1,107 @@
+/* Desktop keeps its existing header; only the secondary-action wrapper is new. */
+.siteHeaderSecondary{display:contents}
+#siteMobileSettings{display:none}
+body.sitePolish .siteHeaderSecondary>button{font-size:12px;padding:8px 12px;white-space:nowrap;min-height:36px}
+@media(max-width:760px){
+ body.sitePolish.gardenEdition[data-theme]{padding:9px}
+ body.sitePolish header{position:relative;z-index:35;display:flex;flex-wrap:nowrap;align-items:center;padding:16px 15px;gap:12px;min-height:70px;margin-bottom:13px}
+ body.sitePolish .siteBrand{flex:1;min-width:0;width:auto}
+ body.sitePolish header b{font-size:23px;line-height:1.4;letter-spacing:3px;white-space:nowrap}
+ body.sitePolish header small{display:none}
+ body.sitePolish .siteHeaderActions{position:relative;display:flex;flex-wrap:nowrap;width:auto;gap:7px;flex-shrink:0}
+ body.sitePolish .siteHeaderActions>#siteMobileSettings{display:inline-flex;align-items:center;justify-content:center;min-height:36px;font-size:12px;padding:7px 11px;background:transparent}
+ body.sitePolish .siteHeaderActions>#newPost{font-size:12px;min-height:36px;padding:7px 12px}
+ body.sitePolish .siteHeaderSecondary{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:40;min-width:170px;padding:7px;background:var(--t-card);border:1px solid var(--t-line);border-radius:var(--ui-control-radius);box-shadow:0 10px 28px #0002}
+ body.sitePolish .siteSettingsOpen .siteHeaderSecondary{display:flex;flex-direction:column;gap:3px}
+ body.sitePolish .siteHeaderSecondary>button{width:100%;min-height:40px;display:flex;align-items:center;justify-content:flex-start;text-align:left;font-size:13px;padding:9px 12px;border:0;background:transparent;border-radius:var(--ui-control-radius)}
+ body.sitePolish .siteHeaderSecondary>button:hover{background:var(--t-tint)}
+ body.sitePolish aside{margin-bottom:13px}
+ body.sitePolish #siteMobileNavigation{min-height:46px;padding:12px 14px;font-size:12px}
+ body.sitePolish #siteMobileCurrent{font-size:12px;max-width:50%}
+ body.sitePolish .siteMobileOpen #siteSidebarContent{padding:9px 12px 14px}
+ body.sitePolish #nav .navGroupLinks{gap:7px}
+ body.sitePolish #nav button{font-size:13px;min-height:41px;padding:10px}
+ body.sitePolish main,body.sitePolish[data-theme=ins] main{padding:21px 14px 25px}
+ body.sitePolish #profile{padding-bottom:18px}
+ body.sitePolish #profile>.eyebrow{display:none}
+ body.sitePolish #profile h1{font-size:24px;line-height:1.55;letter-spacing:0;margin:0 0 11px}
+ body.sitePolish #profile>.muted{font-size:13px;line-height:1.85}
+ body.sitePolish #profile>.row{margin-top:15px;gap:8px}
+ body.sitePolish #profile>.row button{font-size:12px;padding:8px 10px;min-height:36px}
+ body.sitePolish #feedManageBar{margin:12px 0 9px;min-height:26px}
+ body.sitePolish #feedManageBar>.sitePostCount{font-size:12px}
+ body.sitePolish #feedManageBar>.bulkEntry{font-size:11px;min-height:27px;padding:4px 1px}
+ body.sitePolish .searchbar{display:flex;margin:0 0 9px;padding:0;gap:0;width:100%;min-width:0}
+ body.sitePolish .postSearchInput{flex:1 1 100%;width:100%;min-width:0}
+ body.sitePolish .searchbar #search{font-size:14px;min-height:44px;padding-top:12px;padding-bottom:12px;padding-left:12px;padding-right:66px}
+ body.sitePolish .postSearchInput.hasSelectedTag>#search{padding-right:66px}
+ body.sitePolish #searchTagsToggle{top:22px;right:7px;font-size:11px;min-height:30px;padding:5px}
+ body.sitePolish #searchSelectedTag{font-size:12px;min-height:28px;line-height:1.6;padding:4px 8px;margin-top:8px;max-width:100%;white-space:normal;text-align:left}
+ body.sitePolish #searchTagSuggestions{left:0;right:0;min-width:0;width:100%;max-width:100%;max-height:48dvh;padding:13px}
+ body.sitePolish .searchTagChips button{font-size:12px;min-height:32px;padding:6px 9px}
+ body.sitePolish .searchTagHeading{font-size:11px;margin-bottom:9px}
+ body.sitePolish #siteMobileFilters{display:grid;grid-template-columns:minmax(0,1fr) 104px;align-items:start;gap:9px;margin:0 0 17px;min-width:0}
+ body.sitePolish #siteMobileFilters>#postDates{margin:0;min-width:0;border-radius:var(--ui-control-radius)}
+ body.sitePolish #siteMobileFilters>#postDates>summary{padding:11px 10px;min-height:17px;font-size:11px;gap:5px}
+ body.sitePolish #siteMobileFilters #dateRangeText{display:none}
+ body.sitePolish #siteMobileFilters>#postDates>summary:after{content:'展开';font-size:10px;margin-left:auto}
+ body.sitePolish #siteMobileFilters>#postDates[data-range-active=true]>summary{color:var(--t-accent)}
+ body.sitePolish #siteMobileFilters>#postDates[data-range-active=true]>summary:after{content:'已筛选'}
+ body.sitePolish #siteMobileFilters>#postDates[open]>summary:after{content:'收起'}
+ body.sitePolish #siteMobileFilters>#order{width:104px;max-width:104px;min-width:0;min-height:41px;padding:9px 7px;box-sizing:border-box;font-size:11px;line-height:1.6;border-radius:var(--ui-control-radius);border:1px solid var(--t-line);background:var(--t-card);color:var(--t-ink)}
+ body.sitePolish #siteMobileFilters:has(#postDates[open]){display:flex;flex-direction:column;gap:9px}
+ body.sitePolish #siteMobileFilters>#postDates[open]{width:100%;box-sizing:border-box}
+ body.sitePolish #siteMobileFilters:has(#postDates[open])>#order{align-self:flex-end}
+ body.sitePolish #siteMobileFilters:has(#postDates[hidden]){grid-template-columns:1fr}
+ body.sitePolish #siteMobileFilters:has(#postDates[hidden])>#order{justify-self:end}
+ body.sitePolish #postDates .dateControls{gap:9px;padding:2px 0 4px;margin:8px 11px 10px}
+ body.sitePolish #postDates .dateControls label{font-size:12px;flex-basis:100%;min-width:0}
+ body.sitePolish #postDates .dateControls input{font-size:14px;min-height:40px;width:100%}
+ body.sitePolish #postDates .dateControls button{font-size:12px;min-height:35px;padding:7px 10px}
+ body.sitePolish .post.journalPost{padding:17px 14px;margin:14px 0}
+ body.sitePolish .journalPost>.journalMeta{font-size:11px;line-height:1.7;margin-bottom:10px}
+ body.sitePolish .journalPost>h2{font-size:20px;line-height:1.6;margin-bottom:10px}
+ body.sitePolish .journalPost>.body{font-size:16px;line-height:1.95;margin-bottom:12px}
+ body.sitePolish .journalPost>.chips{gap:6px;margin:10px 0 6px}
+ body.sitePolish .journalPost>.chips button{font-size:11px;min-height:27px;padding:4px 8px}
+ body.sitePolish .journalPost>.chips>.collectionTools{display:contents}
+ body.sitePolish .journalPost>.chips .collectionToggle{border:0;background:transparent;color:var(--t-accent);font-size:11px;min-height:27px;padding:4px 3px}
+ body.sitePolish .journalPost>.postTools{margin-top:9px;gap:12px;min-height:31px}
+ body.sitePolish .postTools>button,body.sitePolish .postMore>summary{font-size:12px;min-height:29px;padding:5px 0;line-height:1.6}
+ body.sitePolish .postMoreMenu{min-width:125px;padding:7px}
+ body.sitePolish .postMoreMenu button{font-size:13px;min-height:38px;padding:9px 11px}
+ body.sitePolish .commentBody{font-size:14px;line-height:1.9}
+ body.sitePolish .postComments textarea{font-size:14px;min-height:78px;padding:12px}
+ body.sitePolish .commentSubmit button{font-size:12px;min-height:35px}
+ body.sitePolish .homePostFold{margin:18px 0 12px}
+ body.sitePolish .homePostFold>button{min-height:38px;padding:9px 15px;font-size:12px}
+ body.sitePolish .pairArchiveFold>summary{padding:16px 14px;gap:11px}
+ body.sitePolish .pairArchiveContent{margin:0 14px;padding-bottom:16px}
+ body.sitePolish .pairArchiveContent>.row{gap:12px;flex-wrap:wrap}
+ body.sitePolish .pairArchiveContent>.row button{font-size:12px;min-height:31px;padding:5px 0}
+ body.sitePolish .pairArchiveNote{font-size:15px;line-height:1.95}
+ body.sitePolish .assetGrid{gap:12px;margin-top:16px}
+ body.sitePolish .assetCard{padding:8px}
+ body.sitePolish .assetCard img{height:135px}
+ body.sitePolish .assetCard .row button{font-size:11px;min-height:29px;padding:5px 0}
+ body.sitePolish .mapTools{gap:8px;align-items:stretch}
+ body.sitePolish .mapTools>button{font-size:11px;min-height:34px;padding:7px 10px}
+ body.sitePolish .graphWorkspaceBar{gap:8px}
+ body.sitePolish .graphWorkspaceBar button{min-height:33px!important;font-size:11px!important;padding:7px 9px!important}
+ body.sitePolish dialog{padding:24px 18px;max-height:calc(100dvh - 28px);width:calc(100vw - 24px);max-width:calc(100vw - 24px)}
+ body.sitePolish dialog label.field{font-size:13px;margin-bottom:18px;line-height:1.8}
+ body.sitePolish dialog :is(input[type=text],input[type=search],input[type=number],textarea,select){font-size:16px;min-height:43px;padding:11px 12px}
+ body.sitePolish dialog textarea{line-height:1.9;min-height:125px}
+ body.sitePolish dialog .hint{font-size:12px;line-height:1.85}
+ body.sitePolish dialog .dialogActions{gap:9px;padding-top:16px;margin-top:19px;flex-wrap:wrap}
+ body.sitePolish dialog .dialogActions button{font-size:13px;min-height:40px;padding:9px 14px}
+ body.sitePolish #pairArchiveForm input[type=text],body.sitePolish #pairArchiveForm textarea{font-size:16px;padding:11px 12px}
+ body.sitePolish .smartPicker .pickerTop{gap:7px;flex-wrap:wrap}
+ body.sitePolish .smartPicker .pickerSearch{font-size:16px;min-height:42px}
+ body.sitePolish .smartPicker button{font-size:12px;min-height:33px;padding:6px 9px}
+ body.sitePolish .smartPicker label{font-size:13px;padding:9px 8px}
+ body.sitePolish footer{padding:17px 15px;margin-top:15px}
+ body.sitePolish footer>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:12px}
+ body.sitePolish footer button{font-size:11px;min-height:34px;padding:7px 8px;text-align:center;justify-content:center}
+}
+@media(max-width:350px){body.sitePolish header{padding:14px 12px;gap:8px}body.sitePolish header b{font-size:21px}body.sitePolish .siteHeaderActions>#newPost{padding-inline:9px}body.sitePolish .siteHeaderActions>#siteMobileSettings{padding-inline:9px}body.sitePolish #siteMobileFilters{grid-template-columns:minmax(0,1fr) 94px;gap:7px}body.sitePolish #siteMobileFilters>#order{width:94px;max-width:94px;font-size:10px}.postTools{column-gap:10px!important}}
